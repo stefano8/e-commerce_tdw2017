@@ -1,0 +1,24 @@
+<form class="form-horizontal style-form" method="post" action="delete-user.php">
+    <h1>Delete User </h1>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="username">Utenti:</label>
+                             <select name="selezione">
+                                 
+                                 <[foreach]>
+                                     
+                                 <option value='<[username]>' name='username' id='username'> <[username]> (<[email]>) </option>
+                                     
+                                <[/foreach]>
+                                    
+                             </select>
+                          </div>
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Elimina </button>
+
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>eliminato</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="location.href='delete-user.php'" > ok </button>
+
+</div>

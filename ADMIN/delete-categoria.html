@@ -1,0 +1,26 @@
+<form class="form-horizontal style-form" method="post" action="delete-categoria.php">
+    <h1> Delete Categoria </h1>
+
+                         <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="nome">Categoria:</label>
+                             <select name="selezione">
+                               <option></option><!--non eliminare -->
+                                <[foreach]> <!--dove vuoi mettere la selectbox-->
+
+                                 <option value='<[nome]>' name='nome' id='nome'> <[nome]> </option>
+
+                                <[/foreach]>
+
+                             </select>
+                          </div>
+
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Elimina </button>
+
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>eliminata</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="myFunction(this)"  > ok </button>
+
+</div>

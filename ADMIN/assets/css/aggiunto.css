@@ -1,0 +1,64 @@
+#aggiunto{
+    display: block ;
+    width:200px;
+
+    height:100px;
+
+    position:absolute;
+
+    top:15%;
+
+    left:50%;
+
+    margin:-100px 0 0 -100px;
+
+    background-color: greenyellow;
+
+    border-radius: 10px 10px 10px 10px;
+
+    line-height: center;
+
+    text-align: center;
+
+    border-bottom-color: thick dotted darkgreen;
+
+
+
+
+
+
+
+}
+
+
+
+.nonaggiunto{
+    display: none;
+}
+
+
+#aggiuntoErrore{
+    display: inline ;
+    width:200px;
+
+    height:120px;
+
+    position:absolute;
+
+    top:13%;
+
+    left:50%;
+
+    margin:-100px 0 0 -100px;
+
+    background: red;
+    border-radius: 10px 10px 10px 10px;
+
+    line-height: center;
+
+    text-align: center;
+
+    border-bottom-color: thick dotted red;
+
+
+}

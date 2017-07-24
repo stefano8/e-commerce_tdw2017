@@ -1,0 +1,49 @@
+<form class="form-horizontal style-form" name="myForm" method="post" action="add-news.php" onsubmit="validateFormNews()">
+    <h1> Add News </h1>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">data news*</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="data_news" value="" placeholder="AAAA/MM/GG" required >
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">immagine*</label>
+                              <div class="col-sm-10">
+                                  <select class="form-control" name="immagine">
+                                    <[foreach]>
+                                    <<option value="<[path]>"><[imm]></option>
+                                    <[/foreach]>
+                                  </SELECT>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">titolo*</label>
+                              <div class="col-sm-10">
+                                  <textarea type="text" class="form-control" name="titolo" value="" required></textarea>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Corpo*</label>
+                              <div class="col-sm-10">
+                                  <textarea type="text" class="form-control" name="corpo" value="" required></textarea>
+                              </div>
+                          </div>
+
+
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Aggiungi </button>
+
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>news aggiunta</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="myFunction(this)" > ok </button>
+
+</div>
+
+
+<div class="nonaggiunto" id="<[aggiuntoErrore]>">
+
+    <h3>news non aggiunta: errore </h3>
+    <button type="submit" class="btn btn-theme" id="ok"  onclick="myFunction(this)" > ok </button>
+</div>

@@ -1,0 +1,33 @@
+<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+    <thead>
+		    <tr>
+			       <th>data</th>
+			       <th>username</th>
+             <th>importo</th>
+             <th>dettagli</th>
+		</tr>
+	</thead>
+  <tbody>
+
+        <[foreach]>
+
+        <tr>
+			<td>
+				 <[data]>
+			</td>
+			<td>
+				 <[username]>
+			</td>
+			<td>
+				<[prezzototale]>
+			</td>
+			<td>
+				<a class="visualizza" href="dettagliordineBO.php?id=<[id]>">
+				Visualizza </a>
+			</td>
+		</tr>
+
+    <[/foreach]>
+
+	</tbody>
+</table>

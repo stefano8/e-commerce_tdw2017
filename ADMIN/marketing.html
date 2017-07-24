@@ -1,0 +1,31 @@
+<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+    <thead>
+		    <tr>
+			       <th>titolo</th>
+
+             <th>cont visualizzazioni</th>
+             <th> edit</th>
+		</tr>
+	</thead>
+  <tbody>
+
+        <[foreach]>
+
+        <tr>
+			<td>
+				 <[titolo]>
+			</td>
+			<td>
+				 <[contvisualizzazioni]>
+			</td>
+
+			<td>
+				<a class="visualizza" href="editprodotto.php?id=<[id_prodotto]>">
+				Edit <[titolo]> </a>
+			</td>
+		</tr>
+
+    <[/foreach]>
+
+	</tbody>
+</table>

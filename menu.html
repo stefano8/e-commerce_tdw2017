@@ -1,0 +1,58 @@
+
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse container-fluid">
+                    
+                    
+                    <ul id="menutendina" class="nav navbar-nav">
+                        <li><a href="index.php">Home</a></li>
+
+
+
+
+
+                        <li><a href="shopFilm.php">Film</a>
+                            <ul> 
+                               <[foreach]>
+                                    
+                                <li> <a href="shopPerCategorie.php?id_cat=<[id_categoria]>/<[nome]> & tipologia=film"> <[nome]> </a> </li>
+
+
+                                <[/foreach]>
+                            </ul>
+                        </li>
+
+
+
+
+
+
+
+                        <li><a href="shopSerie.php">Serie Tv</a>
+                            <ul>
+                                <[foreach]>
+
+                                <li> <a href="shopPerCategorie.php? id_cat=<[id_categoria1]>/<[nome1]> & tipologia=serie"> <[nomeserie]> </a> </li>
+
+                                <[/foreach]>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="news.php">News</a></li>
+                        <li><a href="ultimiusciti.php">Ultime Uscite</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End mainmenu area -->

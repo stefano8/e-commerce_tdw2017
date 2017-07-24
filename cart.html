@@ -1,0 +1,112 @@
+
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Il mio carrello</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="single-product-area">
+<div class="container">
+        <div class="row">
+
+
+            <div class="col-md-8">
+                <div class="product-content">
+                    
+                        <form method="post" action="checkout.php">
+                            <h2>asd</h2>
+                            <table cellspacing="0" class="shop_table cart">
+                                <thead>
+                                <tr>
+                                    <th class="product-remove">&nbsp;</th>
+                                    <th class="product-thumbnail">&nbsp;</th>
+                                    <th class="product-name">Prodotto</th>
+                                    <th class="product-price">Prezzo</th>
+                                    <th class="product-quantity">Quantità</th>
+                                    <th class="product-subtotal">Totale</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <[foreach]>
+                                <tr class="cart_item">
+                                    <td class="product-remove">
+                                        <button class="fa fa-remove" type="button" value="<[idpro]>" onclick="location.href='removeproductTocart.php?rem=<[idpro]>';">
+                                    
+                                    </button>
+                                    </td>
+
+                                    <td class="product-thumbnail">
+                                        <img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="<[immagine]>">
+                                    </td>
+
+                                    <td class="product-name">
+                                        <[nome]>
+                                    </td>
+
+                                    <td class="product-price">
+                                        <span class="amount"><[prezzo]></span>
+                                    </td>
+
+                                    <td class="product-quantity">
+                                        <div class="quantity buttons_added">
+                                             <span class="amount"><[numero]></span>
+                                        </div>
+                                    </td>
+
+                                    <td class="product-subtotal">
+                                        <span class="amount"><[prezzoQuan]></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <[/foreach]>
+                                    <td class="actions" colspan="6">
+                                        
+                                       
+                                        <input type="submit" value="Procedi con ordine" name="proceed" class="checkout-button button alt wc-forward">
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </form>
+
+                        
+                   
+                </div>
+                 </div>
+                <div class="col-md-4">
+                
+                            <div class="cart_totals ">
+                                <h2>Totale</h2>
+
+                                <table cellspacing="0">
+                                    <tbody>
+                                    <tr class="cart-subtotal">
+                                        <th>Subtotale</th>
+                                        <td><span class="amount"><[prezzototale]></span></td>
+                                    </tr>
+
+                                    <tr class="shipping">
+                                        <th>Shipping and Handling</th>
+                                        <td>Spedizione gratuita</td>
+                                    </tr>
+
+                                    <tr class="order-total">
+                                        <th>Totale Ordine</th>
+                                        <td><strong><span class="amount"><[prezzototale]></span></strong> </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                         
+                        </div>
+                    </div>
+           
+        </div>
+    </div>
+
+</div>    

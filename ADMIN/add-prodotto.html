@@ -1,0 +1,95 @@
+<form class="form-horizontal style-form" id="formprodotti" name="myForm" method="post" action="add-prodotto.php"
+      onsubmit="validateFormProdotti()">
+    <h1> Add Prodotto </h1>
+                         <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Titolo Prodotto*</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="titolo" value="" required>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Durata*</label>
+                              <div class="col-sm-10">
+                                  <input type="number" class="form-control" name="durata" value="" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Tipologia(Film o Serie)*</label>
+                              <div class="col-sm-10">
+                                  <select  class="form-control" name="tipologia" value="" placeholder="film/serie" >
+                                    <<option value="film">film</option>
+                                    <<option value="serie">serie</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label"> Prezzo*</label>
+                              <div class="col-sm-10">
+                                <input type="number" min="0" class="form-control" name="prezzo" value="" required>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label"> Quantità Disponibile*</label>
+                              <div class="col-sm-10">
+                                <input type="number" min="0" max="100" class="form-control" name="quantita_disponibile" value="" required>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Descrizione</label>
+                              <div class="col-sm-10">
+                                  <textarea type="text" class="form-control" name="descrizione" value=""></textarea>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="id_immagine">Id immagine:</label>
+
+                                <div class="col-sm-10">
+                             <select  class="form-control"  name="selezione1">
+
+                                 <[foreach]>
+
+                                 <option value='<[id_immagine]>' name='id_immagine' id='id_immagine'>
+                                     (id:<[id_immagine]>) <[alt]>  </option>
+
+                                <[/foreach]>
+
+                             </select>
+                           </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="id_categoria">Id Categoria:</label>
+                                <div class="col-sm-10">
+                             <select  class="form-control"  name="selezione2">
+
+                                 <[foreach]>
+
+                                 <option value='<[id_categoria]>' name='id_categoria' id='id_categoria'> (id:<[id_categoria]>) <[nome]>  </option>
+
+                                <[/foreach]>
+
+                             </select>
+                          </div>
+                        </div>
+                         <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Data uscita*</label>
+                              <div class="col-sm-10">
+                                  <input type="date" class="form-control" name="data_uscita" value="" placeholder="AAAA/MM/GG" required>
+                              </div>
+                          </div>
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Aggiungi </button>
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>prodotto aggiunto</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="myFunction(this)" > ok </button>
+
+</div>
+
+
+<div class="nonaggiunto" id="<[aggiuntoErrore]>">
+
+    <h3>prodotto non aggiunto: errore </h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="myFunction(this)"> ok </button>
+</div>

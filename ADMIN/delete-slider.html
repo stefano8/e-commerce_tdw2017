@@ -1,0 +1,26 @@
+<form class="form-horizontal style-form" method="post" action="delete-slider.php">
+    <h1> Delete Slider </h1>
+
+                         <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="id_immagine">Slider:</label>
+                             <select name="selezione">
+
+                                <[foreach]> <!--dove vuoi mettere la selectbox-->
+
+                                 <option value='<[id_immagine]>' name='id_immagine' id='id_immagine'> <[id_immagine]> (<[alt]>) </option>
+
+                                <[/foreach]>
+
+                             </select>
+                          </div>
+
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Elimina </button>
+
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>eliminato</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="myFunction(this)" > ok </button>
+
+</div>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Admin Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/js/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/bootstrap-daterangepicker/daterangepicker.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+      <link href="assets/css/layout-datatable.css" rel="stylesheet" type="text/css" />
+
+     <link href="assets/css/aggiunto.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="./script.js"> </script>
+
+
+    </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+
+
+
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="index.php" class="logo"><b>ADMINISTRATOR PANEL</b></a>
+            <!--logo end-->
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="../logout.php">Logout</a></li>
+            	</ul>
+            </div>
+        </header>
+      <!--header end-->
+
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+
+
+
+
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+
+              	  <p class="centered"><a href="index.php"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+              	  <h5 class="centered">Administrator</h5>
+
+
+
+                  <li class="mt">
+                      <a href="index.php">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Dashboard</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>AGGIUNTA ELEMENTI</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="add-categoria.php">Add Categoria</a></li>
+                          <li><a  href="add-prodotto.php">Add Prodotto</a></li>
+                          <li><a  href="add-news.php">Add News</a></li>
+                          <li><a  href="add-immagini.php">Add Immagini</a></li>
+                          <li><a  href="add-slider.php">Add Slider</a></li>
+                          <li><a  href="add-group.php">Add Gruppo</a></li>
+                          <li><a  href="add-servizio.php">Add Servizio</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-magnet"></i>
+                          <span>ELIMINAZIONE ELEMENTI</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="delete-categoria.php">Delete Categoria</a></li>
+                          <li><a  href="delete-prodotto.php">Delete Prodotto</a></li>
+                          <li><a  href="delete-news.php">Delete News</a></li>
+                          <li><a  href="delete-immagini.php">Delete Immagini</a></li>
+                          <li><a  href="delete-slider.php">Delete Slider</a></li>
+                          <li><a  href="delete-group.php">Delete Gruppo</a></li>
+                          <li><a  href="delete-servizio.php">Delete Servizio</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>MODIFICA ELEMENTI</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="edit-categoria.php">Edit Categoria</a></li>
+                          <li><a  href="edit-prodotto.php">Edit Prodotto</a></li>
+                          <li><a  href="edit-news.php">Edit News</a></li>
+                          <li><a  href="edit-immagini.php">Edit Immagini</a></li>
+                          <li><a  href="edit-slider.php">Edit Slider</a></li>
+                          <li><a  href="edit-group.php">Edit Gruppo</a></li>
+                          <li><a  href="edit-servizio.php">Edit Servizio</a></li>
+
+                      </ul>
+                  </li>
+                  <li class="sub-menu"><a href="javascript:;" >
+                      <i class="fa fa-user-md"></i>
+                      <span>PERMESSI </span>
+                  </a>
+                      <ul class="sub">
+                          <li><a  href="assegnagruppo-user.php">Assegna Gruppo-User</a></li>
+                          <li><a  href="assegnagruppo-servizio.php">Assegna Servizio-Gruppo</a></li>
+                      </ul>
+                  </li>
+
+
+                  <li class="sub-menu"><a href="javascript:;" >
+                      <i class="fa fa-recycle"></i>
+                      <span>RACCOLTA DATI </span>
+                  </a>
+                      <ul class="sub">
+                          <li><a  href="gestioneordini.php">Gestione Ordini</a></li>
+                            <li><a  href="marketing.php">Marketing</a></li>
+                      </ul>
+                  </li>
+
+
+                  <li class="sub-menu">
+                    <span> <a href="../index.php">TORNA AL SITO</a></span>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+          	<h3><i class="fa fa-angle-right"></i> Admin </h3>
+
+          	<!-- BASIC FORM ELELEMNTS -->
+          	<div class="row mt">
+          		<div class="col-lg-12">
+                  <div class="form-panel">
+
+
+
+                  	  <[content]>                                <!-- tag becontent-->
+
+
+                  </div>
+          		</div><!-- col-lg-12-->
+          	</div><!-- /row -->
+
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              Indifferente Team
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+
+
+    <!--common script for all pages-->
+    <script src="assets/js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+
+
+
+	<!--custom tagsinput-->
+	<script src="assets/js/jquery.tagsinput.js"></script>
+
+
+
+
+
+
+	<script src="assets/js/form-component.js"></script>
+
+
+  <script>
+      //custom select box
+      $(function(){
+          $('select.styled').customSelect();
+      });
+  </script>
+
+  </body>
+</html>

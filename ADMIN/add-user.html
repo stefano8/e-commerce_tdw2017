@@ -1,0 +1,92 @@
+<form class="form-horizontal style-form" name="myForm" method="post" action="add-user.php" onsubmit="validateFormUser()">
+
+    <h1> Add User </h1>
+                         
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="nome">nome*</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="nome" id="nome" value="" required>
+                                
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="cognome">cognome*</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="cognome" id="cognome" value="" required>
+                                
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="città">città*</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="città" id="città" value="" required>
+                              </div>
+                          </div>
+                           <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="indirizzo">indirizzo*</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="indirizzo" id="indirizzo" value="" required>
+                                
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="cap">CAP*</label>
+                              <div class="col-sm-10">
+                                  <input type="number" class="form-control" name="cap" id="cap" value="" max="5" required>
+                                
+                              </div>
+                          </div>
+                         <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="stato">stato*</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="stato" id="stato" value="" required>
+                                
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="cellulare">cellulare*</label>
+                              <div class="col-sm-10">
+                                  <input type="number" class="form-control" name="cellulare" id="cellulare" value="" min="8" max="10" required>
+                                
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="user">username*</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="username" id="username" value=""  required>
+                                
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="password">password*</label>
+                              <div class="col-sm-10">
+                                  <textarea type="text" class="form-control" name="password" id="password" value="" required></textarea>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="email">email*</label>
+                              <div class="col-sm-10">
+                                  <textarea type="email" class="form-control" name="email" id="email" value="" required></textarea>
+                              </div>
+                          </div>
+                        <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Aggiungi </button>
+    
+    <div id="risultato"> </div>
+                                
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>utente aggiunto</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="location.href='add-user.php'" > ok </button>
+
+</div>
+
+
+<div class="nonaggiunto" id="<[aggiuntoErrore]>">
+
+    <h3>utente non aggiunto: errore </h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="location.href='add-user.php'" > ok </button>
+</div>
+
+</html>

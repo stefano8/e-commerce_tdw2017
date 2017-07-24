@@ -1,0 +1,28 @@
+<form class="form-horizontal style-form" method="post" action="delete-coupon.php">
+    <h1> Delete Coupon </h1>
+    
+                         <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="id_coupon">Coupon:</label>
+                             <select name="selezione">
+                                 
+                                 <[foreach]>
+                                     
+                                 <option value='<[id_coupon]>' name='id_coupon' id='id_coupon'> <[id_coupon]> (<[codice]>) </option>
+                                     
+                                <[/foreach]>
+                                    
+                             </select>
+                          </div>
+
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Elimina </button>
+
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>eliminato</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="location.href='delete-coupon.php'" > ok </button>
+
+</div>
+
+

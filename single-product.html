@@ -1,0 +1,123 @@
+
+<div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Prodotto</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+                    <div class="single-product-area">
+                        <div class="zigzag-bottom"></div>
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+                                <!--div prdotti centrali-->
+                                <div class="col-md-12">
+                                    <div class="product-content-right">
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="product-images">
+                                                    <div class="product-main-img">
+                                                        <img src="<[pathc]>" alt="" class="dimensione" >
+                                                    </div>
+
+                                                    <div class="product-gallery">
+                                                        <[foreach]>
+                                                        <img src="<[piupath]>" alt="" class="dimensione" >
+                                                        <[/foreach]>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-8">
+                                              <div class="col-sm-4 col-sm-offset-8">
+                                                  <div class="shopping-item">
+                                                      <a href="wishlist.php?id_prodotto=<[id_prodotto]>">Aggiugi a wishlist <span class="cart-amunt">
+                                                      </span>  </a>
+                                                  </div>
+                                              </div>
+                                                <div class="product-inner">
+                                                    <h2 class="product-name"><[nomec]></h2>
+                                                    <div class="product-inner-price">
+                                                        <ins> prezzo : <[prezzoc]> $ </ins>
+
+                                                    </div>
+                                                    <div class="product-inner-price">
+                                                        <ins> quantità disponibile : <[num]>  </ins>
+
+                                                    </div>
+
+                                                    <[disponibile]>
+
+
+
+
+
+
+                                                   <div role="tabpanel">
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                                                <h2><b> <center> Descrizione prodotto</b></h2>
+                                                                <p class="descrizionesingoloprodotto"> <[descrizionec]> </p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                     <!-- End main content area -->
+
+
+
+
+
+                      <[formrecensione]>
+
+
+
+
+                            <div class="container" id="recensioni" >
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h2>Recensioni </h2>
+
+                                    <[foreach]>
+                                        <div role="tabpanel" class="tab-pane fade in active" id="contenitoreRec">
+                                            <p><h3><b><i class="fa fa-user" aria-hidden="true"></i> <[usernameR]></b> </h3> </p>
+                                                <p>Inserito il: <[dataR]> </p>
+                                                <p> <b> <[titoloR]> </b> </p>
+                                                <p> <[testoR]> </p>
+                                        </div>
+                                    <[/foreach]>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>

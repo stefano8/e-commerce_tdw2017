@@ -1,0 +1,69 @@
+
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Check Out</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                <h3>Controlla e completa l'ordine</h3>
+                <h5>L'acquisto sarà completato solo con la conferma della spedizione</h5>
+                    <div class="product-content-right">
+                        <div class="woocommerce">
+
+                          <div class="shopping-item">
+                              <a href="paga.php?id=<[idspedizione]>"> Acquista ora  <span class="cart-amunt"></span> <i class="fa fa-shopping-cart"></i></a>
+                          </div>
+                            <p><[nome]>  <[cognome]></p>
+                            <p><[indirizzo]></p>
+                            <p><[città]> <[cap]></p>
+                            <p><[stato]></p>
+                            <p><[telefono]></p>
+
+
+
+
+                            <div class="woocommerce-info">Vuoi modificare l'indirizzo di spedizione? <a href="listaindirizzi.php" aria-expanded="false" >Clicca qui </a>
+                            </div>
+
+                            <div class="woocommerce-info">Hai un coupon? <a class="showcoupon" data-toggle="collapse" href="#coupon-collapse-wrap" aria-expanded="false" aria-controls="coupon-collapse-wrap">Clicca qui per inserire il codice</a>
+                            </div>
+
+                            <form id="coupon-collapse-wrap" method="post" class="checkout_coupon collapse">
+
+                                <p class="form-row form-row-first">
+                                    <input type="text" value="" id="coupon_code" placeholder="Coupon code" class="input-text" name="coupon_code">
+                                </p>
+
+                                <p class="form-row form-row-last">
+                                    <input type="submit" value="Apply Coupon" name="apply_coupon" class="button">
+                                </p>
+
+                                <div class="clear"></div>
+                            </form>
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>

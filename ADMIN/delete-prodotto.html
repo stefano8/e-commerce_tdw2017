@@ -1,0 +1,25 @@
+<form class="form-horizontal style-form" method="post" action="delete-prodotto.php">
+    <h1>Delete Prodotto </h1>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="titolo">Prodotto:</label>
+                             <select name="selezione">
+                                <option> </option>
+                                 <[foreach]>
+
+                                 <option value='<[titolo]>' name='titolo' id='titolo'> (id:<[id_prodotto]>) <[titolo]> </option>
+
+                                <[/foreach]>
+
+                             </select>
+                          </div>
+
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Elimina </button>
+
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>eliminato</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="myFunction(this)" > ok </button>
+
+</div>

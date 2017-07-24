@@ -1,0 +1,47 @@
+<form class="form-horizontal style-form" method="post" action="edit-coupon.php">
+    <h1> Edit Coupon </h1>
+    
+                         <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="id_coupon">Coupon:</label>
+                             <select name="selezione" id="nomecoupon" onchange="editcoupon()">
+                                 <option selected="" value=""> Seleziona</option>
+                                 
+                                 <[foreach]>
+                                     
+                                 <option value='<[id_coupon]>' name='id_coupon' id='id_coupon'> <[id_coupon]> (<[codice]>) </option>
+                                     
+                                <[/foreach]>
+                                    
+                             </select>
+                          </div>
+                             
+                          <div class="form-group mod" style="visibility:hidden">
+                              <label class="col-sm-2 col-sm-2 control-label" for="id">Id coupon</label>
+                              <div class="col-sm-10">
+                                  <input type="number" class="form-control" name="id_coupon" id="id" value="">
+                              </div>
+                          </div>
+                          <div class="form-group mod" style="visibility:hidden">
+                              <label class="col-sm-2 col-sm-2 control-label" for="codicee">Codice coupon</label>
+                              <div class="col-sm-10">
+                                  <input type="number" class="form-control" name="codice" id="codicee" value="">
+                                
+                              </div>
+                          </div>
+                          <div class="form-group mod" style="visibility:hidden">
+                              <label class="col-sm-2 col-sm-2 control-label" for="val">Validità</label>
+                              <div class="col-sm-10">
+                                  <input type="date" class="form-control" name="validità" id="val" value="">
+                              </div>
+                          </div> 
+                        <div class="form-group mod" style="visibility:hidden">
+                              <label class="col-sm-2 col-sm-2 control-label" for="scontoo">Sconto</label>
+                              <div class="col-sm-10">
+                                  <input type="number" class="form-control" name="sconto" id="scontoo" value="">
+                              </div>
+                          </div>
+                          
+  
+                    <button type="submit" class="btn btn-theme mod" style="visibility:hidden">Modifica</button>
+                                                                            
+</form>

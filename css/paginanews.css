@@ -1,0 +1,78 @@
+.contenitorenews{
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    position:relative;
+    overflow: hidden;
+}
+
+.contenitoreimmagine{
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+.contenitoreimmagine img{
+    width: 100%;
+    height: auto;
+}
+
+
+.contenitoretitolo{
+    float: right;
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.contenitoretitolo h2{
+    background: white;
+    width: 100%;
+    text-align: left;
+    padding: 0 5px 5px 5px ;
+    position: absolute;
+    top: 0;
+}
+
+/*.descrizione p{
+    text-align: justify;
+    white-space:nowrap;
+    overflow:hidden;
+    width:300px;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+}
+*/
+.contenitoretitolosingola h2{
+    background: white;
+    width: 90%;
+    text-align: center;
+    padding: 0 5px 5px 5px ;
+    position: absolute;
+    top: 0;
+}
+
+.descrizione {
+    float: right;
+    width: 80%;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 5%;
+
+}
+
+
+.descrizionesingola {
+    float: right;
+    width: 100%;
+    height: auto;
+    margin-inside: 10px;
+}
+
+
+
+
+
+

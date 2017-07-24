@@ -1,0 +1,24 @@
+<form class="form-horizontal style-form" method="post" action="delete-servizio.php">
+    <h1>Delete Servizi </h1>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" for="scriipt">Servizi:</label>
+                             <select name="selezione">
+
+                                 <[foreach]>
+
+                                 <option value='<[script]>' name='script' id='scriipt'> <[script]> (<[id_servizio]>) </option>
+
+                                <[/foreach]>
+
+                             </select>
+                          </div>
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Elimina </button>
+
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>eliminato</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="myFunction(this)" > ok </button>
+
+</div>

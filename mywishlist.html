@@ -1,0 +1,43 @@
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>My Wishlist</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="maincontent-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="latest-product">
+                    <[foreach]>
+                    <div class="contenitorenews">
+                        <div class="contenitoreimmagine">
+                            <img src= "<[path]>" alt="">
+                        </div><form action="addProductToCart.php" class="cart">
+                            <input type="hidden" name="id_prodotto"
+                                   value="<[id_prodotto]>">
+                            <div class="quantity">
+                                <input type="number"   value="1" name="quantity" min="1" step="1" max="<[num]>">
+                            </div>
+                            <button class="add_to_cart_button" type="submit">Aggiungi al carrello</button>
+                        </form>
+                        <div class="contenitoretitolo">
+                            <h2>  <[titolo]> </h2>
+
+
+                        </div>
+
+                    </div>
+                    <[/foreach]>
+               </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End main content area -->

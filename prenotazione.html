@@ -1,0 +1,108 @@
+
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Prenotazione</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="single-product-area">
+<div class="container">
+        <div class="row">
+
+
+            <div class="col-md-8">
+                <div class="product-content">
+
+                        <form method="post" action="prenotazioneeffettuata.php">
+                          <input type="hidden" value="<[id_prodotto]>" name="idProdotto">
+
+                            <table cellspacing="0" class="shop_table cart">
+                                <thead>
+                                <tr>
+
+                                    <th class="product-thumbnail">&nbsp;</th>
+                                    <th class="product-name">Prodotto</th>
+                                        <th class="product-name">Quantità</th>
+                                    <th class="product-price">Prezzo</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr class="cart_item">
+
+
+                                    <td class="product-thumbnail">
+                                        <img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="<[immagine]>">
+                                    </td>
+
+                                    <td class="product-name">
+                                        <[nome]>
+                                    </td>
+
+                                    <td class="product-price">
+                                        <span class="amount">
+                                          <input type="number" name="quantity" value="1" min="1" >
+
+                                        </span>
+                                    </td>
+
+                                    <td class="product-price">
+                                        <span class="amount"><[prezzo]></span>
+                                    </td>
+
+
+                                  </tr>
+                                <tr>
+
+
+                                </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="col-md-offset-4">
+
+                            <input type="submit" value="Procedi con prenotazione" name="proceed" class="checkout-button button alt wc-forward">
+                          </div>
+                        </form>
+
+
+
+                </div>
+                 </div>
+                <div class="col-md-4">
+
+                            <div class="cart_totals ">
+                                <h2>Totale</h2>
+
+                                <table cellspacing="0">
+                                    <tbody>
+                                    <tr class="cart-subtotal">
+                                        <th>Subtotale</th>
+                                        <td><span class="amount"><[prezzo]> $</span></td>
+                                    </tr>
+
+                                    <tr class="shipping">
+                                        <th>Shipping and Handling</th>
+                                        <td>Spedizione gratuita</td>
+                                    </tr>
+
+                                    <tr class="order-total">
+                                        <th>Totale </th>
+                                        <td><strong><span class="amount"><[prezzo]> $</span></strong> </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+
+</div>

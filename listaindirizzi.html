@@ -1,0 +1,40 @@
+<div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Lista indirizzi</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="single-product-area">
+<div class="zigzag-bottom"></div>
+<div class="container">
+<div class="row">
+
+<[foreach]>
+
+<div class="col-1" id="contorno">
+<p><[città]></p>
+<p><[indirizzo]></p>
+<p><[cap]></p>
+<p><[stato]></p>
+<button value="<[id]>" onclick="location.href='checkout.php?id=<[id]>'" name="idIndirizzo">seleziona</button>
+
+</div>
+<div class="zigzag-bottom"></div>
+<[/foreach]>
+
+
+
+
+
+</div>
+
+<div class="woocommerce-info">Vuoi inserire un nuovo indirizzo di spedizione? <a href="modificaindirizzo.php" aria-expanded="false" >Clicca qui </a>
+</div>
+</div>
+</div>

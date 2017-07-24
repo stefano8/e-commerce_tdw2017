@@ -1,0 +1,55 @@
+<form class="form-horizontal style-form" method="post" action="assegnagruppo-user.php">
+    <h1> Assegna Gruppo-User </h1>
+
+                          <div class="form-group">
+                              <label  class="col-sm-2 col-sm-2 control-label" for="selezione1">Username:</label>
+                             <select name="selezione1" >
+
+                                <[foreach]>
+
+                                 <option value='<[username]>' name='username' id='username'> <[username]> </option>
+
+                                <[/foreach]>
+
+                             </select>
+                          </div>
+
+
+                        <div class="form-group">
+                              <label  class="col-sm-2 col-sm-2 control-label" for="selezione2">Gruppo:</label>
+                             <select name="selezione2" >
+
+                                <[foreach]>
+
+                             <option value='<[idgruppo]>' id='nome'> <[nome]> </option>
+
+                                <[/foreach]>
+
+                             </select>
+                          </div>
+    <button type="submit" class="btn btn-theme" id="bottone" name="sub"> Aggiungi </button>
+
+</form>
+
+<div class="nonaggiunto" id="<[aggiunto]>">
+
+    <h3>assegnato</h3>
+    <button type="submit" class="btn btn-theme" id="ok" onclick="myFunction(this)" > ok </button>
+
+</div>
+
+
+<!--
+                         <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Gruppi</label>
+                              <div class="col-sm-10">
+
+                                <[foreach]>
+
+<input type="checkbox" value='<[checkboxgruppi]>' id='id_gruppo' name='id_gruppo[]'> <[checkboxgruppi]>
+
+                                <[/foreach]>
+
+                              </div>
+                          </div>
+-->

@@ -1,0 +1,124 @@
+<div class="slider-area">
+    <!-- Slider -->
+    <div class="block-slider block-slider4">
+        <ul class="block-slider block-slider4" id="bxslider-home4">
+
+            <[foreach]>
+          <li><img src="<[id_immaginee]>" alt="Slider mancante"></li>
+            <[/foreach]>
+
+        </ul>
+    </div>
+    <!-- ./Slider -->
+</div> <!-- End slider area -->
+
+
+
+
+
+
+
+<div class="maincontent-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!--div di alcuni prodotti -->
+
+                <div class="latest-product">
+                    <h2 class="section-title">Alcuni dei nostri Prodotti</h2>
+                    <div class="product-carousel">
+                        <[foreach]>
+                        <div class="single-product">
+                            <div class="product-f-image">
+                                <img src="<[path]>" alt="">
+                                <div class="product-hover">
+                                    <a href="single-product.php?id=<[id_prodotto]>" class="view-details-link" ><i class="fa fa-link"></i> Dettagli</a>
+                                </div>
+                            </div>
+                            <h2><a href="single-product.php?id=<[id_prodotto]>"> <[titolo]> </a></h2>
+                            <div class="product-carousel-price">
+                                <ins>  <[prezzo]>$  </ins>
+                            </div>
+                        </div>
+                        <[/foreach]>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="product-widget-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+
+            <!--div a prezzi bassi-->
+
+            <div class="col-md-4">
+                <div class="single-product-widget">
+                    <h2 class="product-wid-title">A prezzi bassi</h2>
+                    <a href="prezzibassi.php" class="wid-view-more">View All</a>
+                    <[foreach]>
+                    <div class="single-wid-product">
+                        <a href="single-product.php?id=<[id_prodotto1]>">
+                            <img src= "<[offertapath]>" alt="" class="product-thumb"></a>
+                        <a href="single-product.php?id=<[id_prodotto1]>">  <h2><[offertanome]></h2> </a>
+
+                        <div class="product-wid-price">
+                            <ins> <[offertaprezzo]>$ </ins>
+                        </div>
+                    </div>
+                    <[/foreach]>
+                </div>
+            </div>
+
+
+
+            <!--div dei news-->
+
+            <div class="col-md-4">
+                <div class="single-product-widget">
+                    <h2 class="product-wid-title">News</h2>
+                    <a href="news.php" class="wid-view-more">View All</a>
+                    <[foreach]>
+                    <div class="single-wid-product">
+                        <a href="single-news.php?id_news=<[id_news]>">
+                            <img src= "<[immagine]>" alt="" class="product-thumb"></a>
+                        <a href="single-news.php?id_news=<[id_news]>"><h2> <[titoloo]> </h2> </a>
+                        <b> <[dataaaaaaaaa]> </b>
+                    </div>
+                    <[/foreach]>
+                </div>
+            </div>
+
+
+
+            <!--div ultimi usciti-->
+
+
+            <div class="col-md-4">
+                <div class="single-product-widget">
+                    <h2 class="product-wid-title">Ultime uscite</h2>
+                    <a href="ultimiusciti.php" class="wid-view-more">View All</a>
+                    <[foreach]>
+                    <div class="single-wid-product">
+                        <a href="single-product.php?id=<[id_prodotto2]>">
+                            <img src= "<[newspath]>" alt="" class="product-thumb"></a>
+                        <a href="single-product.php?id=<[id_prodotto2]>">  <h2> <[newsnome]></h2> </a>  <b> <[newsdata]> </b>
+                        <div class="product-wid-price">
+                           <br> <ins> <[newsprezzo]>$ </ins>
+                        </div>
+                    </div>
+                    <[/foreach]>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div> <!-- End product widget area -->

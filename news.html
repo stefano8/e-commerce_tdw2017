@@ -1,0 +1,45 @@
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>News</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="maincontent-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="latest-product">
+                    <[foreach]>
+                    <div class="contenitorenews">
+                        <div class="contenitoreimmagine">
+                            <img src= "<[immagine]>" alt="">
+                        </div>
+                        <div class="contenitoretitolo">
+                            <h2>  <[titolo]> (<b><[data_news]></b>) </h2>
+                        </div>
+                        <div class="descrizione">
+                            <p style="
+                                text-align: justify;
+                                white-space:nowrap;
+                                overflow:hidden;
+                                width:300px;
+                                text-overflow:ellipsis;
+                                size-o-text-overflow:ellipsis;"> <[corpo]> </p>
+                            <a href="single-news.php?id_news=<[id_news]>"> Continua a leggere..</a>
+                        </div>
+                    </div>
+                    <[/foreach]>
+               </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End main content area -->
+    
+    
